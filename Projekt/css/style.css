@@ -1,13 +1,13 @@
-
 body{
     margin: 0px;
-
+    background: #8B8C81;
 }
 header{
-    position: relative;
-    background: #212625;
+    background: #F2F1DF;
     width: 100%;
     height: 180px;
+    position: fixed;
+    border-radius: 0px 0px 50px 50px;
 }
 header img{
     position: absolute;
@@ -19,37 +19,79 @@ header img{
     transform: translateY(-50%);
 }
 header nav {
-    background: #8B8C81;
     float: right;
-    width: 150px;
-    height: 80px;
+    height: 100px;
     margin-right: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-li{
+header nav ul{
     list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    background: #040404;
+    margin-right: 30px;
+    padding: 20px 30px 20px 30px;
+    border-radius: 0px 40px 0px 40px;
+}
+header nav ul li:hover{
+    background: #1c1c1c;
+}
+header nav ul li:hover a{
+    color: red;
+}
+header nav ul li a{
+    font-size: 20px;
+    font-family: 'Nosifer', cursive;
+    text-decoration: none;
+    color: #F2F1DF;
 }
 main{
     clear: both;
     float: left;
-    background: #8B8C81;
     width: 70%;
-    height: 700px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    min-height: 700px;
+    text-align: justify;
 }
 article{
     background: #F2F1DF;
-    margin: 50px;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 30px;
+}
+article h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Nosifer', cursive;
+}
+article p{
+    font-size: 20px;
 }
 aside{
     float: right;
-    background: #BFA288;
     width: 30%;
-    height: 700px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    min-height: 700px;
+}
+aside article{
+    background: #F2F1DF;
+    margin: 30px;
+    padding: 15px
+}
+aside article h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Nosifer', cursive;
+}
+aside article p{
+    font-size: 18px;
 }
 footer{
-
-    background: #0C0D0B;
+    background: #040404;
     width: 100%;
     height: 100px;
     text-align: center;
